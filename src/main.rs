@@ -7,7 +7,7 @@ use std::{
 };
 
 fn main() {
-    let listener = TcpListener::bind("10.243.71.236:7878").unwrap(); // Привязка к IP Zerotier
+    let listener = TcpListener::bind("0.0.0.0:7878").unwrap(); // Привязка к IP Zerotier
     let pool = ThreadPool::new(4); // Пул потоков с 4 рабочими
 
     for stream in listener.incoming() {
