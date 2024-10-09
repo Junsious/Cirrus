@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Более темный фон для стиля */
+    color: #e0e0e0; /* Более светлый текст */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Заполнение всей высоты экрана */
+    justify-content: center; /* Центрирование содержимого */
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px; /* Увеличение отступа */
+    background-color: #2c2c2c; /* Более светлый фон для контейнера */
+    border-radius: 12px; /* Более выраженные закругленные углы */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Более глубокая тень */
+    transition: transform 0.3s ease; /* Плавный переход при наведении */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Увеличение при наведении */
+}
+
+h1 {
+    color: #ffffff; /* Белый цвет заголовка */
+    text-align: center; /* Центрирование заголовка */
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+    font-size: 2.5em; /* Увеличение размера заголовка */
+    font-weight: bold; /* Жирный текст для заголовка */
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов формы */
+    gap: 10px; /* Промежуток между элементами формы */
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #555; /* Более темная граница */
+    background-color: #333; /* Темный фон для ввода */
+    color: #cfcfcf; /* Светлый текст */
+    border-radius: 6px; /* Более округлые углы */
+    transition: border-color 0.3s ease; /* Плавный переход цвета границы */
+}
+
+input[type="file"]:focus {
+    outline: none; /* Убираем стандартный контур */
+    border-color: #4CAF50; /* Изменение цвета границы при фокусе */
+}
+
+button {
+    background-color: #4CAF50; /* Акцентный цвет кнопки */
+    color: white;
+    padding: 12px 20px; /* Увеличение отступов для кнопки */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Плавный переход цвета и размера */
+    border-radius: 6px; /* Более округлые углы */
+    font-size: 1em; /* Увеличение размера шрифта */
+}
+
+button:hover {
+    background-color: #45a049; /* Светлее при наведении */
+    transform: translateY(-2px); /* Подъем кнопки при наведении */
+}
+
+#response-message {
+    margin-top: 20px;
+    padding: 15px; /* Увеличение отступа */
+    background-color: #4CAF50; /* Зеленый фон для сообщения */
+    color: white;
+    border-radius: 6px; /* Более округлые углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Тень для сообщения */
+    font-weight: bold; /* Жирный текст для сообщения */
+    text-align: center; /* Центрирование текста в сообщении */
+}

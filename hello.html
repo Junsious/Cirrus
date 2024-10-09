@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Disk</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zen Disk</h1>
+        <h2>Upload a File</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data" id="uploadForm">
+            <input type="file" name="file" id="fileInput" required />
+            <button type="submit">Upload</button>
+        </form>
+
+        <h2>Uploaded Files</h2>
+        <ul id="fileList">
+            <!-- Files will be dynamically added here -->
+        </ul>
+    </div>
+
+    <script>
+        async function fetchFiles() {
+            const response = await fetch('/list-files');
+            const files = await response.json();
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = ''; // Clear the current list
+
+            files.forEach(file => {
+                const listItem = document.createElement('li');
+                const link = document.createElement('a');
+                link.href = `/download/${file}`;
+                link.innerText = file;
+                link.download = file;
+
+                listItem.appendChild(link);
+                fileList.appendChild(listItem);
+            });
+        }
+
+        // Load the file list on page load
+        document.addEventListener('DOMContentLoaded', fetchFiles);
+
+        // Refresh the file list after uploading a file
+        const uploadForm = document.getElementById('uploadForm');
+        uploadForm.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+            const formData = new FormData(uploadForm);
+
+            // Send the file upload request
+            await fetch('/upload', {
+                method: 'POST',
+                body: formData,
+            });
+
+            // After file upload, refresh the file list
+            fetchFiles();
+        });
+    </script>
+</body>
+</html>
