@@ -17,7 +17,7 @@
 
         <h2>Uploaded Files</h2>
         <ul id="fileList">
-            <!-- Files will be dynamically added here -->
+            <!-- Files will be added dynamically here -->
         </ul>
     </div>
 
@@ -40,23 +40,31 @@
             });
         }
 
-        // Load the file list on page load
+        // Load the file list when the page loads
         document.addEventListener('DOMContentLoaded', fetchFiles);
 
-        // Refresh the file list after uploading a file
+        // Refresh the file list after a file is uploaded
         const uploadForm = document.getElementById('uploadForm');
         uploadForm.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Prevent default form submission
+            e.preventDefault(); // Prevent the default form submission
             const formData = new FormData(uploadForm);
 
-            // Send the file upload request
-            await fetch('/upload', {
-                method: 'POST',
-                body: formData,
-            });
+            try {
+                // Send the file to the server
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData,
+                });
 
-            // After file upload, refresh the file list
-            fetchFiles();
+                if (response.ok) {
+                    alert('File uploaded successfully');
+                    fetchFiles(); // Update the file list after successful upload
+                } else {
+                    alert('Failed to upload file');
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
         });
     </script>
 </body>
