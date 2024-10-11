@@ -7,7 +7,7 @@ use std::path::Path;
 use std::str;
 
 fn main() {
-    let listener = TcpListener::bind("10.243.71.236:7878").unwrap();  // Changed address
+    let listener = TcpListener::bind("0.0.0.0:7878").unwrap();  // Changed address
     let pool = ThreadPool::new(4); // Create a thread pool with 4 workers
 
     for stream in listener.incoming() {
