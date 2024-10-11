@@ -1,83 +1,123 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Более темный фон для стиля */
-    color: #e0e0e0; /* Более светлый текст */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh; /* Заполнение всей высоты экрана */
-    justify-content: center; /* Центрирование содержимого */
+    font-family: 'Arial', sans-serif; /* Set the font for the body */
+    background-color: #121212; /* Darker background for styling */
+    color: #e0e0e0; /* Lighter text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Fill the entire height of the viewport */
+    justify-content: center; /* Center items vertically */
 }
 
 .container {
-    width: 90%;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 30px; /* Увеличение отступа */
-    background-color: #2c2c2c; /* Более светлый фон для контейнера */
-    border-radius: 12px; /* Более выраженные закругленные углы */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Более глубокая тень */
-    transition: transform 0.3s ease; /* Плавный переход при наведении */
+    width: 90%; /* Set the container width to 90% */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 20px auto; /* Center the container with vertical margin */
+    padding: 30px; /* Increase padding */
+    background-color: #2c2c2c; /* Lighter background for the container */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Deeper shadow */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
 
 .container:hover {
-    transform: scale(1.02); /* Увеличение при наведении */
+    transform: scale(1.02); /* Scale up on hover */
 }
 
 h1 {
-    color: #ffffff; /* Белый цвет заголовка */
-    text-align: center; /* Центрирование заголовка */
-    margin-bottom: 20px; /* Отступ снизу для заголовка */
-    font-size: 2.5em; /* Увеличение размера заголовка */
-    font-weight: bold; /* Жирный текст для заголовка */
+    color: #ffffff; /* White color for the header */
+    text-align: center; /* Center the header */
+    margin-bottom: 20px; /* Bottom margin for the header */
+    font-size: 2.5em; /* Increase header size */
+    font-weight: bold; /* Bold text for the header */
 }
 
 form {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов формы */
-    gap: 10px; /* Промежуток между элементами формы */
+    margin-bottom: 20px; /* Bottom margin for the form */
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange form elements vertically */
+    gap: 10px; /* Space between form elements */
 }
 
 input[type="file"] {
-    padding: 10px;
-    border: 1px solid #555; /* Более темная граница */
-    background-color: #333; /* Темный фон для ввода */
-    color: #cfcfcf; /* Светлый текст */
-    border-radius: 6px; /* Более округлые углы */
-    transition: border-color 0.3s ease; /* Плавный переход цвета границы */
+    padding: 10px; /* Padding for the file input */
+    border: 1px solid #555; /* Darker border */
+    background-color: #333; /* Dark background for input */
+    color: #cfcfcf; /* Light text for input */
+    border-radius: 6px; /* Rounded corners for input */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
 input[type="file"]:focus {
-    outline: none; /* Убираем стандартный контур */
-    border-color: #4CAF50; /* Изменение цвета границы при фокусе */
+    outline: none; /* Remove default outline */
+    border-color: #4CAF50; /* Change border color on focus */
 }
 
 button {
-    background-color: #4CAF50; /* Акцентный цвет кнопки */
-    color: white;
-    padding: 12px 20px; /* Увеличение отступов для кнопки */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Плавный переход цвета и размера */
-    border-radius: 6px; /* Более округлые углы */
-    font-size: 1em; /* Увеличение размера шрифта */
+    background-color: #4CAF50; /* Button accent color */
+    color: white; /* Text color for the button */
+    padding: 12px 20px; /* Increased padding for the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for color and size */
+    border-radius: 6px; /* Rounded corners for the button */
+    font-size: 1em; /* Increase font size */
 }
 
 button:hover {
-    background-color: #45a049; /* Светлее при наведении */
-    transform: translateY(-2px); /* Подъем кнопки при наведении */
+    background-color: #45a049; /* Lighter color on hover */
+    transform: translateY(-2px); /* Raise button on hover */
 }
 
 #response-message {
-    margin-top: 20px;
-    padding: 15px; /* Увеличение отступа */
-    background-color: #4CAF50; /* Зеленый фон для сообщения */
-    color: white;
-    border-radius: 6px; /* Более округлые углы */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Тень для сообщения */
-    font-weight: bold; /* Жирный текст для сообщения */
-    text-align: center; /* Центрирование текста в сообщении */
+    margin-top: 20px; /* Top margin for the response message */
+    padding: 15px; /* Increased padding */
+    background-color: #4CAF50; /* Green background for the message */
+    color: white; /* White text for the message */
+    border-radius: 6px; /* Rounded corners for the message */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for the message */
+    font-weight: bold; /* Bold text for the message */
+    text-align: center; /* Center the text in the message */
+}
+
+/* Styles for the file list */
+ul#fileList {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+ul#fileList li {
+    margin: 10px 0; /* Vertical margin for list items */
+    padding: 12px; /* Padding for list items */
+    background-color: #333; /* Dark background for list items */
+    border-radius: 8px; /* Rounded corners for list items */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and size */
+    display: flex; /* Use flexbox for list item layout */
+    align-items: center; /* Center items vertically in list */
+}
+
+ul#fileList li:hover {
+    background-color: #4CAF50; /* Change background color on hover */
+    transform: translateY(-2px); /* Raise item on hover */
+}
+
+ul#fileList li a {
+    color: #cfcfcf; /* Light color for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1em; /* Increase font size */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+ul#fileList li a:hover {
+    color: white; /* Change link color on hover */
+    text-decoration: underline; /* Underline link on hover */
+}
+
+ul#fileList li::before {
+    content: '📄'; /* Icon before list items */
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2em; /* Increase icon size */
 }
