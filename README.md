@@ -41,6 +41,34 @@ Processes requests for uploading files to the server, as well as uploading to yo
     cargo run
     ```
 
+    
+## Development and Contributing
+
+If you would like to contribute to the project, follow these steps:
+
+1. **Create a branch**:
+
+    ```bash
+    git checkout -b feature-branch
+    ```
+
+2. **Make your changes** and test them.
+
+3. **Commit your changes**:
+
+    ```bash
+    git commit -am 'Added new feature'
+    ```
+
+4. **Push your changes**:
+
+    ```bash
+    git push origin feature-branch
+    ```
+
+5. **Create a Pull Request** on GitHub, describing your changes and their purpose.
+
+
 ## License
 
 This project is licensed under the GNU General Public License v3.0. You can find more details in the LICENSE file.
