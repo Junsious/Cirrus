@@ -71,7 +71,7 @@ If you would like to contribute to the project, follow these steps:
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0. You can find more details in the LICENSE file.
+This project is licensed under the MIT License. Details can be found in the LICENSE file.
 
 ---
 
