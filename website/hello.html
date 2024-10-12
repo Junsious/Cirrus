@@ -23,21 +23,27 @@
 
     <script>
         async function fetchFiles() {
-            const response = await fetch('/list-files');
-            const files = await response.json();
-            const fileList = document.getElementById('fileList');
-            fileList.innerHTML = ''; // Clear the current list
+            try {
+                const response = await fetch('/list-files');
+                if (!response.ok) throw new Error('Failed to fetch files');
 
-            files.forEach(file => {
-                const listItem = document.createElement('li');
-                const link = document.createElement('a');
-                link.href = `/download/${file}`;
-                link.innerText = file;
-                link.download = file;
+                const files = await response.json();
+                const fileList = document.getElementById('fileList');
+                fileList.innerHTML = ''; // Clear the current list
 
-                listItem.appendChild(link);
-                fileList.appendChild(listItem);
-            });
+                files.forEach(file => {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = `/download/${file}`;
+                    link.innerText = file;
+                    link.download = file;
+
+                    listItem.appendChild(link);
+                    fileList.appendChild(listItem);
+                });
+            } catch (error) {
+                alert('Error fetching files: ' + error.message);
+            }
         }
 
         // Load the file list when the page loads
