@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #2e1a47;
@@ -7,15 +8,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
     width: 90%;
-    max-width: 600px;
+    max-width: 800px; /* Increased max width for larger screens */
     margin: 20px auto;
-    padding: 30px;
+    padding: 40px; /* Added more padding */
     background-color: #4b306a;
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -29,20 +30,20 @@ body {
 h1 {
     color: #e0e0e0;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-size: 3em; /* Adjusts with screen size */
     font-weight: bold;
 }
 
 form {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 input[type="file"] {
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #8864a5;
     background-color: #53396f;
     color: #e6e6fa;
@@ -58,12 +59,12 @@ input[type="file"]:focus {
 button {
     background-color: #a87fcc;
     color: white;
-    padding: 12px 20px;
+    padding: 15px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     border-radius: 6px;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 button:hover {
@@ -82,13 +83,13 @@ button:hover {
     text-align: center;
 }
 
-/* Styles for the scrollable file list */
+/* Styles for scrollable file list */
 ul#fileList {
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 700px; /* Set maximum height for the file list */
-    overflow-y: auto; /* Make the list scrollable */
+    max-height: 300px;
+    overflow-y: auto;
     border: 1px solid #8864a5;
     padding-right: 10px;
 }
@@ -108,7 +109,7 @@ ul#fileList::-webkit-scrollbar-track {
 
 ul#fileList li {
     margin: 10px 0;
-    padding: 12px;
+    padding: 15px;
     background-color: #53396f;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -124,7 +125,7 @@ ul#fileList li:hover {
 ul#fileList li a {
     color: #e6e6fa;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em; /* Adjusted for better readability */
     transition: color 0.3s ease;
 }
 
@@ -137,4 +138,29 @@ ul#fileList li::before {
     content: '📄';
     margin-right: 10px;
     font-size: 1.2em;
+}
+
+/* Adaptation for large screens */
+@media (min-width: 1920px) {
+    h1 {
+        font-size: 3.5em; /* Increase the header size */
+    }
+
+    .container {
+        max-width: 1000px; /* Increase container width */
+        padding: 50px; /* Increase padding */
+    }
+
+    button {
+        font-size: 1.3em; /* Increase button text size */
+        padding: 20px; /* More padding for larger screens */
+    }
+
+    input[type="file"] {
+        padding: 15px; /* Increase padding for input */
+    }
+
+    ul#fileList li a {
+        font-size: 1.4em; /* Increase font size for file list items */
+    }
 }
