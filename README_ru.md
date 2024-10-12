@@ -4,7 +4,7 @@
 Обрабатывает запросы на загрузку файлов на сервер, а также загрузку на ваш персональный ПК.
 
 ---
-- [ENG_README](https://github.com/Junsious/Cirrus/blob/v1.1/README_ru.md)
+- [ENG_README](https://github.com/Junsious/Cirrus/blob/main/README.md)
 ---
 
 ## Установка и запуск
