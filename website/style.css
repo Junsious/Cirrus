@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif; /* Set the font for the body */
-    background-color: #121212; /* Darker background for styling */
-    color: #e0e0e0; /* Lighter text color */
+    background-color: #2e1a47; /* Deep purple background */
+    color: #e6e6fa; /* Lavender text color */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     display: flex; /* Use flexbox for layout */
@@ -16,7 +16,7 @@ body {
     max-width: 600px; /* Limit the maximum width */
     margin: 20px auto; /* Center the container with vertical margin */
     padding: 30px; /* Increase padding */
-    background-color: #2c2c2c; /* Lighter background for the container */
+    background-color: #4b306a; /* Lighter purple for the container */
     border-radius: 12px; /* More rounded corners */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Deeper shadow */
     transition: transform 0.3s ease; /* Smooth transition on hover */
@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-    color: #ffffff; /* White color for the header */
+    color: #e0e0e0; /* Light color for the header */
     text-align: center; /* Center the header */
     margin-bottom: 20px; /* Bottom margin for the header */
     font-size: 2.5em; /* Increase header size */
@@ -43,21 +43,21 @@ form {
 
 input[type="file"] {
     padding: 10px; /* Padding for the file input */
-    border: 1px solid #555; /* Darker border */
-    background-color: #333; /* Dark background for input */
-    color: #cfcfcf; /* Light text for input */
+    border: 1px solid #8864a5; /* Lavender border */
+    background-color: #53396f; /* Dark purple for input background */
+    color: #e6e6fa; /* Light lavender text for input */
     border-radius: 6px; /* Rounded corners for input */
     transition: border-color 0.3s ease; /* Smooth transition for border color */
 }
 
 input[type="file"]:focus {
     outline: none; /* Remove default outline */
-    border-color: #4CAF50; /* Change border color on focus */
+    border-color: #c084fc; /* Bright lavender on focus */
 }
 
 button {
-    background-color: #4CAF50; /* Button accent color */
-    color: white; /* Text color for the button */
+    background-color: #a87fcc; /* Muted lavender for the button */
+    color: white; /* White text for the button */
     padding: 12px 20px; /* Increased padding for the button */
     border: none; /* Remove border */
     cursor: pointer; /* Change cursor to pointer */
@@ -67,14 +67,14 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Lighter color on hover */
+    background-color: #c084fc; /* Lighter lavender on hover */
     transform: translateY(-2px); /* Raise button on hover */
 }
 
 #response-message {
     margin-top: 20px; /* Top margin for the response message */
     padding: 15px; /* Increased padding */
-    background-color: #4CAF50; /* Green background for the message */
+    background-color: #c084fc; /* Lavender background for the message */
     color: white; /* White text for the message */
     border-radius: 6px; /* Rounded corners for the message */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for the message */
@@ -92,7 +92,7 @@ ul#fileList {
 ul#fileList li {
     margin: 10px 0; /* Vertical margin for list items */
     padding: 12px; /* Padding for list items */
-    background-color: #333; /* Dark background for list items */
+    background-color: #53396f; /* Dark purple background for list items */
     border-radius: 8px; /* Rounded corners for list items */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and size */
     display: flex; /* Use flexbox for list item layout */
@@ -100,19 +100,19 @@ ul#fileList li {
 }
 
 ul#fileList li:hover {
-    background-color: #4CAF50; /* Change background color on hover */
+    background-color: #a87fcc; /* Lighter lavender on hover */
     transform: translateY(-2px); /* Raise item on hover */
 }
 
 ul#fileList li a {
-    color: #cfcfcf; /* Light color for links */
+    color: #e6e6fa; /* Lavender color for links */
     text-decoration: none; /* Remove underline */
     font-size: 1.1em; /* Increase font size */
     transition: color 0.3s ease; /* Smooth transition for color */
 }
 
 ul#fileList li a:hover {
-    color: white; /* Change link color on hover */
+    color: white; /* White color on hover */
     text-decoration: underline; /* Underline link on hover */
 }
 
