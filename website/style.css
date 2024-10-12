@@ -1,123 +1,140 @@
 body {
-    font-family: 'Arial', sans-serif; /* Set the font for the body */
-    background-color: #2e1a47; /* Deep purple background */
-    color: #e6e6fa; /* Lavender text color */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    height: 100vh; /* Fill the entire height of the viewport */
-    justify-content: center; /* Center items vertically */
+    font-family: 'Arial', sans-serif;
+    background-color: #2e1a47;
+    color: #e6e6fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
 .container {
-    width: 90%; /* Set the container width to 90% */
-    max-width: 600px; /* Limit the maximum width */
-    margin: 20px auto; /* Center the container with vertical margin */
-    padding: 30px; /* Increase padding */
-    background-color: #4b306a; /* Lighter purple for the container */
-    border-radius: 12px; /* More rounded corners */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Deeper shadow */
-    transition: transform 0.3s ease; /* Smooth transition on hover */
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #4b306a;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
 }
 
 .container:hover {
-    transform: scale(1.02); /* Scale up on hover */
+    transform: scale(1.02);
 }
 
 h1 {
-    color: #e0e0e0; /* Light color for the header */
-    text-align: center; /* Center the header */
-    margin-bottom: 20px; /* Bottom margin for the header */
-    font-size: 2.5em; /* Increase header size */
-    font-weight: bold; /* Bold text for the header */
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 form {
-    margin-bottom: 20px; /* Bottom margin for the form */
-    display: flex; /* Use flexbox for form layout */
-    flex-direction: column; /* Arrange form elements vertically */
-    gap: 10px; /* Space between form elements */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 input[type="file"] {
-    padding: 10px; /* Padding for the file input */
-    border: 1px solid #8864a5; /* Lavender border */
-    background-color: #53396f; /* Dark purple for input background */
-    color: #e6e6fa; /* Light lavender text for input */
-    border-radius: 6px; /* Rounded corners for input */
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    padding: 10px;
+    border: 1px solid #8864a5;
+    background-color: #53396f;
+    color: #e6e6fa;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
 }
 
 input[type="file"]:focus {
-    outline: none; /* Remove default outline */
-    border-color: #c084fc; /* Bright lavender on focus */
+    outline: none;
+    border-color: #c084fc;
 }
 
 button {
-    background-color: #a87fcc; /* Muted lavender for the button */
-    color: white; /* White text for the button */
-    padding: 12px 20px; /* Increased padding for the button */
-    border: none; /* Remove border */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for color and size */
-    border-radius: 6px; /* Rounded corners for the button */
-    font-size: 1em; /* Increase font size */
+    background-color: #a87fcc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 6px;
+    font-size: 1em;
 }
 
 button:hover {
-    background-color: #c084fc; /* Lighter lavender on hover */
-    transform: translateY(-2px); /* Raise button on hover */
+    background-color: #c084fc;
+    transform: translateY(-2px);
 }
 
 #response-message {
-    margin-top: 20px; /* Top margin for the response message */
-    padding: 15px; /* Increased padding */
-    background-color: #c084fc; /* Lavender background for the message */
-    color: white; /* White text for the message */
-    border-radius: 6px; /* Rounded corners for the message */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for the message */
-    font-weight: bold; /* Bold text for the message */
-    text-align: center; /* Center the text in the message */
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #c084fc;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-align: center;
 }
 
-/* Styles for the file list */
+/* Styles for the scrollable file list */
 ul#fileList {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 700px; /* Set maximum height for the file list */
+    overflow-y: auto; /* Make the list scrollable */
+    border: 1px solid #8864a5;
+    padding-right: 10px;
+}
+
+ul#fileList::-webkit-scrollbar {
+    width: 10px;
+}
+
+ul#fileList::-webkit-scrollbar-thumb {
+    background-color: #8864a5;
+    border-radius: 5px;
+}
+
+ul#fileList::-webkit-scrollbar-track {
+    background-color: #4b306a;
 }
 
 ul#fileList li {
-    margin: 10px 0; /* Vertical margin for list items */
-    padding: 12px; /* Padding for list items */
-    background-color: #53396f; /* Dark purple background for list items */
-    border-radius: 8px; /* Rounded corners for list items */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for background color and size */
-    display: flex; /* Use flexbox for list item layout */
-    align-items: center; /* Center items vertically in list */
+    margin: 10px 0;
+    padding: 12px;
+    background-color: #53396f;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
 }
 
 ul#fileList li:hover {
-    background-color: #a87fcc; /* Lighter lavender on hover */
-    transform: translateY(-2px); /* Raise item on hover */
+    background-color: #a87fcc;
+    transform: translateY(-2px);
 }
 
 ul#fileList li a {
-    color: #e6e6fa; /* Lavender color for links */
-    text-decoration: none; /* Remove underline */
-    font-size: 1.1em; /* Increase font size */
-    transition: color 0.3s ease; /* Smooth transition for color */
+    color: #e6e6fa;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
 ul#fileList li a:hover {
-    color: white; /* White color on hover */
-    text-decoration: underline; /* Underline link on hover */
+    color: white;
+    text-decoration: underline;
 }
 
 ul#fileList li::before {
-    content: '📄'; /* Icon before list items */
-    margin-right: 10px; /* Space between icon and text */
-    font-size: 1.2em; /* Increase icon size */
+    content: '📄';
+    margin-right: 10px;
+    font-size: 1.2em;
 }
