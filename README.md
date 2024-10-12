@@ -40,7 +40,10 @@ Processes requests for uploading files to the server, as well as uploading to yo
     ```bash
     cargo run
     ```
-
+5. go to port 0.0.0.0:7878
+    ```bash
+    http://0.0.0.0:7878/
+    ```
     
 ## Development and Contributing
 
