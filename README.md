@@ -1,8 +1,6 @@
 # Cirrus
 
 Just a cloud written in Rust, HTML, CSS, JavaScript.
-![Cirrus 2](https://github.com/user-attachments/assets/fdef3304-7f97-43b2-a39c-3bc58c52ac57)
-
 ---
 - [RU_README](https://github.com/Junsious/Cirrus/blob/main/README_ru.md)
 ---
