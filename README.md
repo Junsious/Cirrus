@@ -1,4 +1,5 @@
 # Cirrus
+![Cirrus 2](https://github.com/user-attachments/assets/812d5ad7-ff08-4e39-859f-1ec9e92747ae)
 
 Just a cloud written in Rust, HTML, CSS, JavaScript.
 ---
