@@ -8,6 +8,7 @@ Just a cloud written in Rust, HTML, CSS, JavaScript.
 Processes requests for uploading files to the server, as well as uploading to your personal PC.
 
 
+
 ## Installation and Running
 
 ### Requirements
