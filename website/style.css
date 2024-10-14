@@ -1,7 +1,7 @@
 /* General styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #2e1a47;
+    background: linear-gradient(to bottom, #2e1a47, #4b306a);
     color: #e6e6fa;
     margin: 0;
     padding: 0;
@@ -14,25 +14,27 @@ body {
 
 .container {
     width: 90%;
-    max-width: 800px; /* Increased max width for larger screens */
+    max-width: 800px; 
     margin: 20px auto;
-    padding: 40px; /* Added more padding */
+    padding: 40px; 
     background-color: #4b306a;
     border-radius: 12px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .container:hover {
     transform: scale(1.02);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
     color: #e0e0e0;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 3em; /* Adjusts with screen size */
+    font-size: 3em; 
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 form {
@@ -48,12 +50,13 @@ input[type="file"] {
     background-color: #53396f;
     color: #e6e6fa;
     border-radius: 6px;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 input[type="file"]:focus {
     outline: none;
     border-color: #c084fc;
+    background-color: #4d2a57;
 }
 
 button {
@@ -62,7 +65,7 @@ button {
     padding: 15px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     border-radius: 6px;
     font-size: 1.1em;
 }
@@ -70,6 +73,7 @@ button {
 button:hover {
     background-color: #c084fc;
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 #response-message {
@@ -92,6 +96,8 @@ ul#fileList {
     overflow-y: auto;
     border: 1px solid #8864a5;
     padding-right: 10px;
+    border-radius: 6px;
+    background-color: #53396f;
 }
 
 ul#fileList::-webkit-scrollbar {
@@ -110,7 +116,7 @@ ul#fileList::-webkit-scrollbar-track {
 ul#fileList li {
     margin: 10px 0;
     padding: 15px;
-    background-color: #53396f;
+    background-color: #5b3c7a; /* Измененный цвет для лучшего контраста */
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.2s ease;
     display: flex;
@@ -125,7 +131,7 @@ ul#fileList li:hover {
 ul#fileList li a {
     color: #e6e6fa;
     text-decoration: none;
-    font-size: 1.2em; /* Adjusted for better readability */
+    font-size: 1.2em; 
     transition: color 0.3s ease;
 }
 
@@ -140,27 +146,45 @@ ul#fileList li::before {
     font-size: 1.2em;
 }
 
+/* Delete button styles */
+.delete-button {
+    background-color: #ff4d4d; 
+    color: white;
+    padding: 10px 15px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1em; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px; 
+}
+
+.delete-button:hover {
+    background-color: #ff1a1a; 
+    transform: translateY(-2px);
+}
+
 /* Adaptation for large screens */
 @media (min-width: 1920px) {
     h1 {
-        font-size: 3.5em; /* Increase the header size */
+        font-size: 3.5em; 
     }
 
     .container {
-        max-width: 1000px; /* Increase container width */
-        padding: 50px; /* Increase padding */
+        max-width: 1000px; 
+        padding: 50px; 
     }
 
     button {
-        font-size: 1.3em; /* Increase button text size */
-        padding: 20px; /* More padding for larger screens */
+        font-size: 1.3em; 
+        padding: 20px; 
     }
 
     input[type="file"] {
-        padding: 15px; /* Increase padding for input */
+        padding: 15px; 
     }
 
     ul#fileList li a {
-        font-size: 1.4em; /* Increase font size for file list items */
+        font-size: 1.4em; 
     }
 }
