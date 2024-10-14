@@ -12,6 +12,24 @@ document.addEventListener("DOMContentLoaded", () => {
             files.forEach(file => {
                 const li = document.createElement('li');
                 li.textContent = file;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.innerText = 'Удалить';
+                deleteButton.addEventListener('click', async () => {
+                    try {
+                        const response = await fetch(`/delete/${file}`, { method: 'DELETE' });
+                        if (response.ok) {
+                            alert('Файл удален');
+                            fetchFiles(); // Обновление списка файлов
+                        } else {
+                            alert('Не удалось удалить файл');
+                        }
+                    } catch (error) {
+                        alert('Ошибка: ' + error.message);
+                    }
+                });
+
+                li.appendChild(deleteButton);
                 fileList.appendChild(li);
             });
         } catch (error) {
