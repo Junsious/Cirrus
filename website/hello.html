@@ -38,7 +38,25 @@
                     link.innerText = file;
                     link.download = file;
 
+                    const deleteButton = document.createElement('button');
+                    deleteButton.innerText = 'Удалить';
+                    deleteButton.className = 'delete-button'; // Добавлено для применения стилей
+                    deleteButton.addEventListener('click', async () => {
+                        try {
+                            const response = await fetch(`/delete/${file}`, { method: 'DELETE' });
+                            if (response.ok) {
+                                alert('Файл удален');
+                                fetchFiles(); // Обновление списка файлов
+                            } else {
+                                alert('Не удалось удалить файл');
+                            }
+                        } catch (error) {
+                            alert('Ошибка: ' + error.message);
+                        }
+                    });
+
                     listItem.appendChild(link);
+                    listItem.appendChild(deleteButton);
                     fileList.appendChild(listItem);
                 });
             } catch (error) {
