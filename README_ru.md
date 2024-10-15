@@ -73,7 +73,14 @@
     ```
 
 5. **Создайте Pull Request** на GitHub, описав внесенные изменения и их цели.
+   
+## Скриншоты
 
+![image](https://github.com/user-attachments/assets/56b27bc0-c1c4-445a-bca3-ee0b708e8765)
+
+![image](https://github.com/user-attachments/assets/2234f1ae-70ff-477b-b1cf-b3b17e144aff)
+
+![image](https://github.com/user-attachments/assets/4dbe8f27-f1e7-419f-a7ad-7e7804e061ec)
 ## Лицензия
 
 Этот проект распространяется по лицензии MIT. Подробности можно найти в файле LICENSE.
