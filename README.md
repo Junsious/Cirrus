@@ -73,6 +73,11 @@ If you would like to contribute to the project, follow these steps:
 
 5. **Create a Pull Request** on GitHub, describing your changes and their purpose.
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/b7dc6624-9921-4c9b-a566-eac579adfd96)
+
+![image](https://github.com/user-attachments/assets/44ab44b1-c181-42b2-a871-3f21961d7d94)
 
 ## License
 
