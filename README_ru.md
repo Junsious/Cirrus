@@ -83,7 +83,7 @@
 ![image](https://github.com/user-attachments/assets/4dbe8f27-f1e7-419f-a7ad-7e7804e061ec)
 ## Лицензия
 
-Этот проект распространяется по лицензии MIT. Подробности можно найти в файле LICENSE.
+Этот проект распространяется по лицензии [MIT License.](https://github.com/Junsious/Cirrus/blob/main/LICENSE)
 
 ---
 
