@@ -2,12 +2,12 @@
 ![Cirrus 2](https://github.com/user-attachments/assets/812d5ad7-ff08-4e39-859f-1ec9e92747ae)
 
 Просто облако, написанное на Rust, HTML, CSS, JavaScript.
-
-Обрабатывает запросы на загрузку файлов на сервер, а также загрузку на ваш персональный ПК.
-
 ---
 - [ENG_README](https://github.com/Junsious/Cirrus/blob/main/README.md)
 ---
+
+
+Обрабатывает запросы на загрузку файлов на сервер, а также загрузку на ваш персональный ПК.
 
 ## Установка и запуск
 
