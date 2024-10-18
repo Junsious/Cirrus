@@ -89,4 +89,6 @@ This project is licensed under the MIT License. Details can be found in the LICE
 
 ### Author
 
-Junsious ([GitHub](https://github.com/junsious))
+Coder - Junsious ([GitHub](https://github.com/junsious))
+
+Designer - Konrad ([GitHub](https://github.com/WilliamKonRaDDD))
