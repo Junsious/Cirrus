@@ -89,4 +89,6 @@
 
 ### Автор
 
-Junsious ([GitHub](https://github.com/junsious))
+Кодер - Junsious ([GitHub](https://github.com/junsious))
+
+Дизайнер - Konrad ([GitHub](https://github.com/WilliamKonRaDDD))
