@@ -83,7 +83,7 @@ If you would like to contribute to the project, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. Details can be found in the LICENSE file.
+This project is licensed under the ([MIT License.](https://github.com/Junsious/Cirrus/blob/main/LICENSE))
 
 ---
 
