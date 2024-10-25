@@ -3,7 +3,7 @@
 
 Just a cloud written in Rust, HTML, CSS, JavaScript.
 ---
-- [RU_README](https://github.com/Junsious/Cirrus/blob/main/README_ru.md)
+- [README_RU](https://github.com/Junsious/Cirrus/blob/main/README_ru.md)
 ---
 Processes requests for uploading files to the server, as well as uploading to your personal PC.
 
