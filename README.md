@@ -44,7 +44,7 @@ Processes requests for uploading files to the server, as well as uploading to yo
     ```
 5. go to port 0.0.0.0:7878
     ```bash
-    http://0.0.0.0:7878/
+    http://your_ip:8080/
     ```
     
 ## Development and Contributing
